@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+
+# nunca commitar material real de engajamento (hashes/wordlists de verdade)
+*.hash
+*.hashes
+wordlist*.txt
+loot/
+hashes/
+targets/
