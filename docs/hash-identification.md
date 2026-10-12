@@ -1,5 +1,9 @@
 # Identificação de hash
 
+> Isso aqui é sobre reconhecer **hashes** (unidirecionais, não decodificam pra
+> nada). Se a string decodifica pra texto legível, é **encoding**, não hash —
+> ver [`encoding-identification.md`](encoding-identification.md).
+
 ## Por tamanho/forma (hashes "raw", sem prefixo)
 
 | Tamanho | Hex chars | Algoritmo mais provável | Outras hipóteses (mesmo tamanho) |
@@ -46,4 +50,5 @@ Trate a saída delas como lista de hipóteses a testar, não como verdade.
 3. Tem `:` no meio? -> pode ser `hash:salt` ou `user:hash` (formato pwdump/LM/NTLM).
 4. Tem caracteres fora de `[0-9a-f]` e não é `$...$`? -> pode já estar em
    Base64/Base32 (ex.: hashes de algumas APIs, JWT, etc.) — não confundir com
-   o próprio hash.
+   o próprio hash. Ver [`encoding-identification.md`](encoding-identification.md)
+   pra reconhecer qual encoding é.
