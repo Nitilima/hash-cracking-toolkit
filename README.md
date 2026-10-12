@@ -10,7 +10,8 @@ scripts e cheatsheets que uso no dia a dia em pentest/CTF/estudo de segurança.
 
 ```
 docs/
-  hash-identification.md       -> como reconhecer o formato de um hash
+  hash-identification.md       -> como reconhecer o formato de um hash (tamanho/prefixo)
+  encoding-identification.md   -> como reconhecer Base64/Hex/Base32 só de olhar
   cracking-cheatsheet.md       -> comandos prontos de John/Hashcat por formato
   decoding-transformations.md  -> quando a "senha" crackeada não é a senha final
 scripts/
